@@ -1,0 +1,747 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗапуститьКонфигуратор" id="114">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗапуститьКонфигуратор</CommandName>
+				<ExtendedTooltip name="ФормаЗапуститьКонфигураторРасширеннаяПодсказка" id="115"/>
+			</Button>
+			<Button name="ИзменитьФорму" id="105">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ИзменитьФормуРасширеннаяПодсказка" id="106"/>
+			</Button>
+			<Button name="ФормаСправка" id="107">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="108"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="СтраницыФормы" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnBottom</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыФормыРасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<Page name="СтраницаПараматрыИБ" id="75">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параматры ИБ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница параматры ИБ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПараматрыИБРасширеннаяПодсказка" id="76"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаИнформационнаяБаза" id="80">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Информационная база</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры для запуска конфигуратора</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаИнформационнаяБазаРасширеннаяПодсказка" id="81"/>
+							<ChildItems>
+								<InputField name="СтрокаПодключенияИБ" id="77">
+									<DataPath>СтрокаПодключенияИБ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Строка подключение</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтрокаПодключенияИБКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="СтрокаПодключенияИБРасширеннаяПодсказка" id="79"/>
+								</InputField>
+								<UsualGroup name="ГруппаЛогинПарольИБ" id="82">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа логин пароль ИБ</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа логин пароль ИБ</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЛогинПарольИБРасширеннаяПодсказка" id="83"/>
+									<ChildItems>
+										<InputField name="ИБ_Логин" id="84">
+											<DataPath>ИБ_Логин</DataPath>
+											<ContextMenu name="ИБ_ЛогинКонтекстноеМеню" id="85"/>
+											<ExtendedTooltip name="ИБ_ЛогинРасширеннаяПодсказка" id="86"/>
+										</InputField>
+										<InputField name="ИБ_Пароль" id="87">
+											<DataPath>ИБ_Пароль</DataPath>
+											<PasswordMode>true</PasswordMode>
+											<ContextMenu name="ИБ_ПарольКонтекстноеМеню" id="88"/>
+											<ExtendedTooltip name="ИБ_ПарольРасширеннаяПодсказка" id="89"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаХранилище" id="90">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Хранилище конфигурации</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Если конфигурация подключена к хранилищу захватите корень конфигурации и для возможности запуска конфигуратора в пакетном режиме укажите путь, логин и пароль от хранилища конфигурации</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+									<Group>Vertical</Group>
+									<Behavior>Collapsible</Behavior>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<ExtendedTooltip name="ГруппаХранилищеРасширеннаяПодсказка" id="91">
+										<AutoMaxWidth>false</AutoMaxWidth>
+									</ExtendedTooltip>
+									<ChildItems>
+										<InputField name="Хранилище_Путь" id="92">
+											<DataPath>Хранилище_Путь</DataPath>
+											<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="Хранилище_ПутьКонтекстноеМеню" id="93"/>
+											<ExtendedTooltip name="Хранилище_ПутьРасширеннаяПодсказка" id="94">
+												<AutoMaxWidth>false</AutoMaxWidth>
+											</ExtendedTooltip>
+										</InputField>
+										<UsualGroup name="ГруппаЛогинПароль" id="95">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Логин, пароль</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЛогинПарольРасширеннаяПодсказка" id="96"/>
+											<ChildItems>
+												<InputField name="Хранилище_Логин" id="97">
+													<DataPath>Хранилище_Логин</DataPath>
+													<ContextMenu name="Хранилище_ЛогинКонтекстноеМеню" id="98"/>
+													<ExtendedTooltip name="Хранилище_ЛогинРасширеннаяПодсказка" id="99"/>
+												</InputField>
+												<InputField name="Хранилище_Пароль" id="100">
+													<DataPath>Хранилище_Пароль</DataPath>
+													<PasswordMode>true</PasswordMode>
+													<ContextMenu name="Хранилище_ПарольКонтекстноеМеню" id="101"/>
+													<ExtendedTooltip name="Хранилище_ПарольРасширеннаяПодсказка" id="102"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ФормаПодготовитьКонфигурацию" id="1">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.ПрочитатьКонфигурацию</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.ShowData</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Прочитать объекты метаданных для сортировки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ФормаПодготовитьКонфигурациюРасширеннаяПодсказка" id="2">
+								<AutoMaxWidth>false</AutoMaxWidth>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="СортироватьСТекущимиНастройками" id="103">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.СортироватьСТекущимиНастройками</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.QueryWizard</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="СортироватьСТекущимиНастройкамиРасширеннаяПодсказка" id="104">
+								<AutoMaxWidth>false</AutoMaxWidth>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПрефиксы" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Правила сортировки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Префиксы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПрефиксыРасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<Table name="Префиксы" id="9">
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.Префиксы</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПрефиксыКонтекстноеМеню" id="10"/>
+							<AutoCommandBar name="ПрефиксыКоманднаяПанель" id="11">
+								<ChildItems>
+									<Button name="ФормаСохранитьКонфигурацию" id="73">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.СохранитьКонфигурацию</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.QueryWizard</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Сортировать объекты метаданных с текущими настройками</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ФормаСохранитьКонфигурациюРасширеннаяПодсказка" id="74"/>
+									</Button>
+									<Button name="ПрефиксыТолькоИспользуемые" id="116">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ТолькоИспользуемые</CommandName>
+										<ExtendedTooltip name="ПрефиксыТолькоИспользуемыеРасширеннаяПодсказка" id="117"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПрефиксыРасширеннаяПодсказка" id="12"/>
+							<SearchStringAddition name="ПрефиксыСтрокаПоиска" id="13">
+								<AdditionSource>
+									<Item>Префиксы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрефиксыСтрокаПоискаКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="ПрефиксыСтрокаПоискаРасширеннаяПодсказка" id="15"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПрефиксыСостояниеПросмотра" id="16">
+								<AdditionSource>
+									<Item>Префиксы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрефиксыСостояниеПросмотраКонтекстноеМеню" id="17"/>
+								<ExtendedTooltip name="ПрефиксыСостояниеПросмотраРасширеннаяПодсказка" id="18"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПрефиксыУправлениеПоиском" id="19">
+								<AdditionSource>
+									<Item>Префиксы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПрефиксыУправлениеПоискомКонтекстноеМеню" id="20"/>
+								<ExtendedTooltip name="ПрефиксыУправлениеПоискомРасширеннаяПодсказка" id="21"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ПрефиксыПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ПрефиксыНомерСтроки" id="22">
+									<DataPath>Объект.Префиксы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрефиксыНомерСтрокиКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ПрефиксыНомерСтрокиРасширеннаяПодсказка" id="24"/>
+								</LabelField>
+								<CheckBoxField name="ПрефиксыИспользовать" id="70">
+									<DataPath>Объект.Префиксы.Использовать</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПрефиксыИспользоватьКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="ПрефиксыИспользоватьРасширеннаяПодсказка" id="72"/>
+								</CheckBoxField>
+								<InputField name="ПрефиксыПрефикс" id="25">
+									<DataPath>Объект.Префиксы.Префикс</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрефиксыПрефиксКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ПрефиксыПрефиксРасширеннаяПодсказка" id="27"/>
+								</InputField>
+								<InputField name="ПрефиксыПорядокПрефикса" id="67">
+									<DataPath>Объект.Префиксы.ПорядокПрефикса</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПрефиксыПорядокПрефиксаКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="ПрефиксыПорядокПрефиксаРасширеннаяПодсказка" id="69"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПрефиксыJSON" id="109">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Префиксы JSON</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница префиксы JSON</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПрефиксыJSONРасширеннаяПодсказка" id="110"/>
+					<ChildItems>
+						<InputField name="ПрефиксыJSON" id="111">
+							<DataPath>ПрефиксыJSON</DataPath>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ПрефиксыJSONКонтекстноеМеню" id="112"/>
+							<ExtendedTooltip name="ПрефиксыJSONРасширеннаяПодсказка" id="113"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаЛог" id="58">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лог</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лог</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаЛогРасширеннаяПодсказка" id="59"/>
+					<ChildItems>
+						<InputField name="ВременныйКаталог" id="6">
+							<DataPath>ВременныйКаталог</DataPath>
+							<ContextMenu name="ВременныйКаталогКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="ВременныйКаталогРасширеннаяПодсказка" id="8"/>
+						</InputField>
+						<CheckBoxField name="РежимОтладки" id="118">
+							<DataPath>РежимОтладки</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РежимОтладкиКонтекстноеМеню" id="119"/>
+							<ExtendedTooltip name="РежимОтладкиРасширеннаяПодсказка" id="120"/>
+						</CheckBoxField>
+						<TextDocumentField name="Лог" id="3">
+							<DataPath>Лог</DataPath>
+							<ContextMenu name="ЛогКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ЛогРасширеннаяПодсказка" id="5"/>
+						</TextDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОбъектыМетаданных" id="62">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объекты метаданных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объекты метаданных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОбъектыМетаданныхРасширеннаяПодсказка" id="63"/>
+					<ChildItems>
+						<Table name="ОбъектыМетаданных" id="31">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Объект.ОбъектыМетаданных</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОбъектыМетаданныхКонтекстноеМеню" id="32"/>
+							<AutoCommandBar name="ОбъектыМетаданныхКоманднаяПанель" id="33"/>
+							<ExtendedTooltip name="ОбъектыМетаданныхРасширеннаяПодсказка" id="34"/>
+							<SearchStringAddition name="ОбъектыМетаданныхСтрокаПоиска" id="35">
+								<AdditionSource>
+									<Item>ОбъектыМетаданных</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбъектыМетаданныхСтрокаПоискаКонтекстноеМеню" id="36"/>
+								<ExtendedTooltip name="ОбъектыМетаданныхСтрокаПоискаРасширеннаяПодсказка" id="37"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОбъектыМетаданныхСостояниеПросмотра" id="38">
+								<AdditionSource>
+									<Item>ОбъектыМетаданных</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбъектыМетаданныхСостояниеПросмотраКонтекстноеМеню" id="39"/>
+								<ExtendedTooltip name="ОбъектыМетаданныхСостояниеПросмотраРасширеннаяПодсказка" id="40"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОбъектыМетаданныхУправлениеПоиском" id="41">
+								<AdditionSource>
+									<Item>ОбъектыМетаданных</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбъектыМетаданныхУправлениеПоискомКонтекстноеМеню" id="42"/>
+								<ExtendedTooltip name="ОбъектыМетаданныхУправлениеПоискомРасширеннаяПодсказка" id="43"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОбъектыМетаданныхНомерСтроки" id="44">
+									<DataPath>Объект.ОбъектыМетаданных.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОбъектыМетаданныхНомерСтрокиКонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="ОбъектыМетаданныхНомерСтрокиРасширеннаяПодсказка" id="46"/>
+								</LabelField>
+								<InputField name="ОбъектыМетаданныхТип" id="47">
+									<DataPath>Объект.ОбъектыМетаданных.Тип</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОбъектыМетаданныхТипКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ОбъектыМетаданныхТипРасширеннаяПодсказка" id="49"/>
+								</InputField>
+								<InputField name="ОбъектыМетаданныхИмя" id="50">
+									<DataPath>Объект.ОбъектыМетаданных.Имя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОбъектыМетаданныхИмяКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ОбъектыМетаданныхИмяРасширеннаяПодсказка" id="52"/>
+								</InputField>
+								<InputField name="ОбъектыМетаданныхПрефикс" id="53">
+									<DataPath>Объект.ОбъектыМетаданных.Префикс</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОбъектыМетаданныхПрефиксКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ОбъектыМетаданныхПрефиксРасширеннаяПодсказка" id="55"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.СортировкаОбъектовМетаданныхПоИменамСУчетомПрефиксов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Лог" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лог</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВременныйКаталог" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Временный каталог</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтрокаПодключенияИБ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка подключения ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИБ_Логин" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИБ_Логин</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИБ_Пароль" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИБ_Пароль</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Хранилище_Путь" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>Хранилище_Путь</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Хранилище_Логин" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>Хранилище_Логин</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Хранилище_Пароль" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>Хранилище_Пароль</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПрефиксыJSON" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Префиксы JSON</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ПрефиксыJSON</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="РежимОтладки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим отладки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПрочитатьКонфигурацию" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать конфигурацию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если вы запускаете сортировку первый раз сначала прочитайте объекты метаданных, затем настройки правила сортировки на соответствующей странице и воспользуйтесь командой "Сортировать объекты метаданных с текущими настройками"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодготовитьКонфигурацию</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СохранитьКонфигурацию" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить конфигурацию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить конфигурацию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьКонфигурацию</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СортироватьСТекущимиНастройками" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать и сортировать с текущими настройками</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если правила сотрировки уже настроены можно сразу запустить сортировку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СортироватьСТекущимиНастройками</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗапуститьКонфигуратор" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить конфигуратор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить конфигуратор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataProcessor</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗапуститьКонфигуратор</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ТолькоИспользуемые" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только используемые</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только используемые</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТолькоИспользуемые</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
